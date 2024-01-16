@@ -72,6 +72,7 @@ module traffic_light(
        end
    end
 
+   // led count down & change state
    always @(posedge div_clk or posedge reset)
    begin
         if(reset)
