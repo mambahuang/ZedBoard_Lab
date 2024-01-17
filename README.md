@@ -2,6 +2,7 @@
 ## Lab 1
 **Traffic light design**
 * control using I/O Planning
+
 :::info
 Mode 0:
 * Green light: 15s
@@ -20,6 +21,7 @@ Back to green light
 **Traffic light design 2**
 * Control using Xilinx SDK software
 * Software control hardware
+
 :::info
 Mode 0:
 * Green light: 15s
