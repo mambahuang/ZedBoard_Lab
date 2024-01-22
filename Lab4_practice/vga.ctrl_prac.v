@@ -143,9 +143,9 @@ module VGA_CTRL(
                 if(hcount >= H_Start && hcount < H_Start + 160)
                     data_in <= 12'hf00;
                 else if(hcount >= H_Start + 160 && hcount < H_Start + 320)
-                    data_in <= 12'h0f0;
-                else if(hcount >= H_Start + 320 && hcount < H_Start + 480)
                     data_in <= 12'h00f;
+                else if(hcount >= H_Start + 320 && hcount < H_Start + 480)
+                    data_in <= 12'h0f0;
                 else if(hcount >= H_Start + 480 && hcount < H_Start + 640)
                     data_in <= 12'hfff;
                 else
@@ -155,9 +155,9 @@ module VGA_CTRL(
                 if(vcount >= V_Start && vcount < V_Start + 120)
                     data_in <= 12'hf00;
                 else if(vcount >= V_Start + 120 && vcount < V_Start + 240)
-                    data_in <= 12'h0f0;
-                else if(vcount >= V_Start + 240 && vcount < V_Start + 360)
                     data_in <= 12'h00f;
+                else if(vcount >= V_Start + 240 && vcount < V_Start + 360)
+                    data_in <= 12'h0f0;
                 else if(vcount >= V_Start + 360 && vcount < V_Start + 480)
                     data_in <= 12'hfff;
                 else
